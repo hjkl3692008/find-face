@@ -1,0 +1,9 @@
+p.sh*
+.DS_Store
+
+/CASIA-WebFace/
+*.zip
+*.jpg
+*.pyc
+*.txt
+*.bin
