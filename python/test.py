@@ -29,14 +29,14 @@ def getFace(picPath):
 	pick = []
 	#非极大值移植  
 	print('rects_len',len(rects))
-	pick = non_max_suppression(rects, probs = sc, overlapThresh = 0.3)
+	pick = non_max_suppression(rects, probs = sc, overlapThresh = 0.1)
 	print('pick_len = ',len(pick))
 
 	#画出矩形框
 	for (x,y,xx,yy) in pick:
 		cv.rectangle(img, (x, y), (xx, yy), (0, 0, 255), 2)    
 
-	cv.imshow('a', img)  
+	cv.imshow('FindFace', img)  
 	cv.waitKey(0)
 
 # picPath :
